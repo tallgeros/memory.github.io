@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Game the Memory">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="programadorgba">
+    <link rel="shortcut icon" href="programadorgba.png" type="image/x-icon" />
+    <link rel="stylesheet" href="memo.css" />
+    <title>Memory</title>
+</head>
+
+<body>
+    <div class="game-container">
+        <h1 class="titulo">JUEGO DE MEMORIA</h1>
+        <button id="empezar" class="overlay-text visible">CLICK PARA JUGAR</button>
+        <div class="juego-info-contenedor">
+            <div class="info-juego">
+                Tiempo <span id="time-remaining">100</span>
+            </div>
+            <div class="info-juego">
+                Giradas <span id="flips">0</span>
+            </div>
+        </div>
+        <div class="contenedor-juego"></div>
+    </div>
+    <div id="primer-modal">
+        <h2>Bienvenidos al mejor Memory</h2>
+        <div class="escoger-carta">
+            <div id="marvel" class="carta-container">
+                <img src="/memo-marvel/marvel.png" alt="Marvel comics" />
+            </div>
+            <div id="dc" class="carta-container">
+                <img src="/memo-dc/dc1.png" alt="DC comics" />
+            </div>
+            <div id="disney" class="carta-container">
+                <img src="/disney/disney.png" alt="Disney" />
+            </div>
+            <div id="family" class="carta-container">
+                <img src="/family/logo.png" alt="Familia" />
+            </div>
+            <div id="señorAnillos" class="carta-container">
+                <img src="/señorAnillos/anillo.png" alt="Señor de los Anillos" />
+            </div>
+            <div id="harryPotter" class="carta-container">
+                <img src="/harryPotter/logo.png" alt="hARRY pOTTER" />
+            </div>
+            <div id="starwars" class="carta-container">
+                <img src="/starwars/logo.png" alt="Star Wars" />
+            </div>
+        </div>
+        <p class="intro">Debeis escoger el tema al que quereis jugar... ¡Suerte!</p>
+    </div>
+    <div id="game-over-text" class="overlay-text">
+        <p id="texto-final"></p>
+        <button id="renove" class="overlay-text-small"> Jugar de nuevo</button>
+        <button id="rellamar" class="overlay-text-small"> Elegir nuevo tema</button>
+    </div>
+    <script src="cards.js"></script>
+    <script src="cargarTema.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="memo.js"></script>
+</body>
+
+</html>
