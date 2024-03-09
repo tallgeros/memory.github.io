@@ -162,7 +162,7 @@ function ready() {
   });
 
   renove.addEventListener("click", () => {
-    empezar.remove("visible");
+    renove.remove("visible");
     game.startGame();
   });
 
